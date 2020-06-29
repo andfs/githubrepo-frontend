@@ -13,3 +13,7 @@ Também foi desconsiderado questões de usabilidade, ux e demais funcionalidades
 O deploy foi realizado no [firebase hosting](https://firebase.google.com/docs/hosting?hl=pt-br)
 
 **Obs: Por não ser o foco, também não foi desenvolvido testes unitários!**
+
+### `URL de acesso`
+
+https://githubrepo-f3cf4.web.app/
