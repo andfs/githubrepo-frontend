@@ -7,3 +7,9 @@
   flex: 1;
   display: flex;
 }
+
+.sair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

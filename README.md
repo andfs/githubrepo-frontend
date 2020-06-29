@@ -6,7 +6,7 @@ Este projeto foi feito em react e typescript. Foi utilizado o [milligram](https:
 
 Como p front-end não será avaliado e por ser algo simples, o memo não foi construído levando em conta questões de performance ao desenvolver os componentes, como por exemplo evitar renderização desnecessária, dynamic imports etc.
 
-Também foi desconsiderado questões de usabilidade e ux.
+Também foi desconsiderado questões de usabilidade, ux e demais funcionalidades.
 
 ### `Deploy`
 

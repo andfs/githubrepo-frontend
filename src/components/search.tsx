@@ -11,7 +11,6 @@ const Search = () => {
   const [repositoryName, setRepositoryName] = React.useState("");
   const [username, setUsername] = React.useState("");
   const [loading, setLoding] = React.useState(false);
-  console.log(process.env.REACT_APP_URL);
   const [repos, setRepos] = React.useState<Array<Repo>>();
   const searchRepo = async () => {
     setUsername("");

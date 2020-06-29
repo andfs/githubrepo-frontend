@@ -87,7 +87,14 @@ const Header = () => {
   };
 
   const children = TokenC.token ? (
-    <em>"Você já está logado."</em>
+    <div>
+      <div>
+        <em>"Você está logado."</em>
+      </div>
+      <div className="sair">
+        <input className="button-primary" type="button" onClick={() => TokenC.setToken("")} value="Sair"></input>
+      </div>
+    </div>
   ) : (
     <FormLogin
       username={username}
