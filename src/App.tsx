@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/header";
+import Search from "./components/search";
+import TokenContext from "./TokenContext";
 
 function App() {
+  const [token, setToken] = React.useState<string | null>(null);
+  const setTokenMethod = (jwtToken: string) => setToken(jwtToken);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TokenContext.Provider value={{ token, setToken: setTokenMethod }}>
+      <div className="App">
+        <Header />
+        <Search />
+      </div>
+    </TokenContext.Provider>
   );
 }
 

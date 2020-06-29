@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+}
+
+.info {
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+}
